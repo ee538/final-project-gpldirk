@@ -140,7 +140,7 @@ std::vector<std::string> CalculateShortestPath_Bellman_Ford(std::string &locatio
   - if current node id is the destination, just end loop.
   - find all node ids from end node to start node using prev vector, the reverse it as return value.
   
-time complexity: O(Vlog(E)), where E is the number of edges, V is the number of nodes.
+time complexity: O(Vlog(V) + E), where E is the number of edges, V is the number of nodes.
 
 Example:
 ```shell
