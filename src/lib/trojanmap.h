@@ -6,6 +6,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <unordered_set>
 
 // A Node is the location of one point in the map.
 class Node {
@@ -50,7 +51,7 @@ class TrojanMap {
   // Given a vector of location ids draws the points on the map (no path).
   void PlotPoints(std::vector<std::string> &location_ids);
 
-  // Given a vector of location ids draws the points on the map with path.
+  // Given a vector of location ids draws the points on the map with path. ???
   void PlotPointsandEdges(std::vector<std::string> &location_ids, std::vector<double> &square);
 
   // Given a vector of location ids draws the points with their order on the map (no path).
@@ -64,6 +65,7 @@ class TrojanMap {
   //-----------------------------------------------------
   // TODO: Implement these functions and create unit tests for them:
 
+
   // Get the Latitude of a Node given its id.
   double GetLat(std::string id);
 
@@ -73,7 +75,7 @@ class TrojanMap {
   // Get the name of a Node given its id.
   std::string GetName(std::string id);
 
-  // Get the Node given its name.
+  // Get the Node given its name. unique name
   Node GetNode(std::string name);
 
   // Get the neighbor ids of a Node.
@@ -97,6 +99,8 @@ class TrojanMap {
                                                  std::string location2_name);
   std::vector<std::string> CalculateShortestPath_Bellman_Ford(std::string location1_name,
                                                  std::string location2_name);
+
+
 
   // Given CSV filename, it read and parse locations data from CSV file,
   // and return locations vector for topological sort problem.
@@ -124,12 +128,21 @@ class TrojanMap {
   std::pair<double, std::vector<std::vector<std::string>>> TravellingTrojan_2opt(
       std::vector<std::string> &location_ids);
 
+
   // Given a subgraph specified by a square-shape area, determine whether there is a
   // cycle or not in this subgraph.
   // vector square has 4 elements: left/right/top/bottom bound in order.
   bool CycleDetection(std::vector<double> &square);
   
   //----------------------------------------------------- User-defined functions
-};
 
+  void search(std::vector<std::string>& location_ids, 
+    std::unordered_set<std::string>& visited, 
+    std::vector<std::string>& path, double dist, 
+    std::pair<double, std::vector<std::vector<std::string>>>& results);
+
+  double calculateTotalDistance(std::vector<std::string>& path);
+
+};
+    
 #endif

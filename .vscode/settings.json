@@ -82,7 +82,8 @@
     "future": "cpp",
     "forward_list": "cpp",
     "queue": "cpp",
-    "clocale": "cpp"
+    "clocale": "cpp",
+    "*.inc": "cpp"
   },
   "lldb.displayFormat": "auto",
   "lldb.dereferencePointers": true,
