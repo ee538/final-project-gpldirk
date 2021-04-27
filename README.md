@@ -1,5 +1,10 @@
 # EE599 Final Project - Spring 2021 - TrojanMap
 
+Team member: 
+Gepei Lu  - gepeilu@usc.edu
+Lizhen Huang - lizhenhu@usc.edu
+
+
 ## TrojanMap
 
 This project focuses on using data structures in C++ and implementing various graph algorithms to build a map application.
