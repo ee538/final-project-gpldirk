@@ -1,7 +1,9 @@
 # EE599 Final Project - Spring 2021 - TrojanMap
 
-Team member: 
+Team member:
+
 Gepei Lu  - gepeilu@usc.edu
+
 Lizhen Huang - lizhenhu@usc.edu
 
 
