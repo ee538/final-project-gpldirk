@@ -279,6 +279,7 @@ TEST(TrojanMapTest, TopologicalSort) {
   EXPECT_EQ(result, gt);
 }
 
+// Test topSort function
 TEST(TrojanMapTest, TopologicalSort2) {
   TrojanMap m;
   m.CreateGraphFromCSVFile();
@@ -289,7 +290,7 @@ TEST(TrojanMapTest, TopologicalSort2) {
   EXPECT_EQ(result, gt);
 }
 
-
+// Test topSort function
 TEST(TrojanMapTest, TopologicalSort3) {
   TrojanMap m;
   m.CreateGraphFromCSVFile();
