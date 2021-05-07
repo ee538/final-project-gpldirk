@@ -12,6 +12,9 @@ Lizhen Huang - lizhenhu@usc.edu
 This project focuses on using data structures in C++ and implementing various graph algorithms to build a map application.
 
 <p align="center"><img src="img/TrojanMap.png" alt="Trojan" width="500" /></p>
+<p align="center"><img src="img/menu.png" alt="Trojan" width="500" /></p>
+<p align="center"><img src="img/example1.png" alt="Trojan" width="500" /></p>
+<p align="center"><img src="img/example2.png" alt="Trojan" width="500" /></p>
 
 - run main function
   ```
